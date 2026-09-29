@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+
+	margin: 48px;
+	font-family: 'Serif';
+	background-color: #fafafa;
+	color: #0f0f0f;
+}
+
+.image-touhou {
+	position: fixed;
+	right: -96px;
+	bottom: 16px;
+	z-index: 1;
+}
+
+.image-touhou img {
+	width: 480px;
+}
+
+.image-touhou:hover {
+	animation: fade 0.2s ease-in-out forwards;
+}
+
+@keyframes fade {
+	from {
+		opacity: 1;
+	}
+	
+	to {
+		opacity: 0.2;
+	}
+}
+
+small {
+	color: gray;
+}
+
+#pfp {
+	width: 200px;
+	border-radius: 50%;
+}
+
+#about-me {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+#main, #about-me {
+	margin: 48px;
+}
+
+a {
+	color: purple;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+iframe {
+	padding: 12px;
+	width: 100vw;
+	height: 100vh;
+}
+
+summary {
+	cursor: pointer;
+	color: purple;
+}
